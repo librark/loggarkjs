@@ -1,0 +1,2 @@
+# loggark
+Utilitarian Logging Library
