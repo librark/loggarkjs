@@ -1,5 +1,5 @@
 {
-  "name": "loggarkjs",
+  "name": "@knowark/loggarkjs",
   "version": "0.1.0",
   "description": "Utilitarian Logging Library",
   "main": "./lib/index.js",
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/knowark/loggarkjs.git"
   },
-  "author": "",
+  "keywords": [
+    "logging",
+    "console"
+  ],
+  "author": "Knowark",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/knowark/loggarkjs/issues"
