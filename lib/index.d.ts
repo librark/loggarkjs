@@ -1,5 +1,5 @@
 export declare class Logger {
-  constructor (dependencies: {
+  constructor (dependencies?: {
     namespace?: string,
     global?: object
   })
