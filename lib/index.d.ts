@@ -4,6 +4,8 @@ export declare class Logger {
     global?: object
   })
 
+  log(...args: string[]): void
+
   error(...args: string[]): void
 
   warn(...args: string[]): void
