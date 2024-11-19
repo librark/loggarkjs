@@ -1,6 +1,6 @@
 {
   "name": "@knowark/loggarkjs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Utilitarian Logging Library",
   "main": "./lib/index.js",
   "type": "module",
