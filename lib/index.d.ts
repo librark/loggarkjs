@@ -9,13 +9,13 @@ export declare class Logger {
 
   context?: object | null
 
-  log(...args: string[]): void
+  log(...data: any[]): void
 
-  error(...args: string[]): void
+  error(...data: any[]): void
 
-  warn(...args: string[]): void
+  warn(...data: any[]): void
 
-  info(...args: string[]): void
+  info(...data: any[]): void
 
-  debug(...args: string[]): void
+  debug(...data: any[]): void
 }
