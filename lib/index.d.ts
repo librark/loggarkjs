@@ -1,5 +1,5 @@
 export declare class Logger {
-  static Logger(): void
+  static context(): object | null
 
   constructor (dependencies?: {
     namespace?: string,
@@ -7,7 +7,7 @@ export declare class Logger {
     global?: object
   })
 
-  context?: object
+  context?: object | null
 
   log(...args: string[]): void
 
