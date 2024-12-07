@@ -1,9 +1,13 @@
 export declare class Logger {
+  static Logger(): void
+
   constructor (dependencies?: {
     namespace?: string,
-    labels?: object,
+    context?: object,
     global?: object
   })
+
+  context?: object
 
   log(...args: string[]): void
 
