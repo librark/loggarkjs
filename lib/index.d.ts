@@ -9,6 +9,8 @@ export declare class Logger {
 
   context?: object | null
 
+  logindex: number
+
   log(...data: any[]): void
 
   error(...data: any[]): void
