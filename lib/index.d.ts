@@ -21,3 +21,15 @@ export declare class Logger {
 
   debug(...data: any[]): void
 }
+
+export declare class Translator {
+  static translate(key: string, options?: object): string
+
+  constructor (options?: object)
+
+  translate(key: string, options?: object): string
+
+  t(key: string, options?: object): string
+}
+
+export declare function t(key: string, options?: object): string
