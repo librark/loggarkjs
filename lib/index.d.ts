@@ -33,3 +33,5 @@ export declare class Translator {
 }
 
 export declare function t(key: string, options?: object): string
+
+export declare function lt(key: string, options?: object): () => string
