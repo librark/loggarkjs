@@ -5,8 +5,7 @@
   "main": "./lib/index.js",
   "type": "module",
   "scripts": {
-    "options": "NODE_OPTIONS='--experimental-vm-modules --no-warnings'",
-    "test": "npm run options -- npx jest --coverage"
+    "test": "node --test --experimental-test-coverage"
   },
   "repository": {
     "type": "git",
@@ -21,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/knowark/loggarkjs/issues"
   },
-  "homepage": "https://github.com/knowark/loggarkjs#readme",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
+  "homepage": "https://github.com/knowark/loggarkjs#readme"
 }
