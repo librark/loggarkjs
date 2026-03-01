@@ -4,7 +4,9 @@ export declare class Logger {
   constructor (dependencies?: {
     namespace?: string,
     context?: object,
-    global?: object
+    global?: object,
+    format?: 'json' | 'plain',
+    flat?: boolean
   })
 
   context?: object | null
