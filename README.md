@@ -21,8 +21,10 @@ logger.info('User login', { userId: 'u-123' })
 Outputs:
 
 ```json
-{"timestamp":"2025-02-15T00:00:00.000Z","level":"info","namespace":"api","message":"User login","args":[{"userId":"u-123"}]}
+{"timestamp":"2025-02-15T00:00:00.000Z","level":"info","namespace":"api","message":"User login","userId":"u-123"}
 ```
+
+Additional object parameters are merged into the base log object. If keys collide, later merged values overwrite earlier keys.
 
 If you prefer context keys at top level (for simpler `jq` filters), enable flattening:
 
