@@ -50,3 +50,16 @@ const logger = new Logger({
   flat: false
 })
 ```
+
+## Journald integration
+
+Set the boolean `globalThis.JOURNALD` flag to `true` and `Logger` will open `/run/systemd/journal/socket` for you. Every JSON record is translated into Journald fields (`PRIORITY`, `MESSAGE`, `LEVEL`, optional `SYSLOG_IDENTIFIER`, and uppercased context payloads), so you can pipe `logger.info()` calls directly into `journalctl` for centralized viewing.
+
+```js
+globalThis.JOURNALD = true
+const logger = new Logger({ namespace: 'api' })
+
+logger.info('User login', { userId: 'u-123', extra: undefined })
+```
+
+Undefined values are dropped, `null` turns into the string `'null'`, and functions/symbols are rendered so Journald receives a predictable payload. The socket connection is cached per process, so later `Logger` instances reuse the same transport without extra setup.
